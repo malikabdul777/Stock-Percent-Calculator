@@ -100,12 +100,17 @@ h1 {
   }
   .inputField {
     width: 85%;
+    font-size: 1.6rem;
+    height: 3.3rem;
   }
   .button {
-    padding: 0.9rem 1.2rem;
+    padding: 1rem 1.3rem;
     border-radius: 0.7rem;
   }
   .resultCont h4 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 1.8rem;
   }
 }
