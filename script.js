@@ -38,10 +38,20 @@ button.addEventListener("click", () => {
     targetTxt.textContent = `${(
       Number(priceInp.value) +
       Number(priceInp.value) * (Number(tarPercentInp.value) / 100)
-    ).toFixed(3)}`;
+    ).toFixed(3)} (${(
+      (
+        Number(priceInp.value) +
+        Number(priceInp.value) * (Number(tarPercentInp.value) / 100)
+      ).toFixed(3) - Number(priceInp.value)
+    ).toFixed(1)})`;
     stopLossTxt.textContent = `${(
       Number(priceInp.value) -
       Number(priceInp.value) * (Number(lossPercentInp.value) / 100)
-    ).toFixed(3)}`;
+    ).toFixed(3)} (${(
+      (
+        Number(priceInp.value) -
+        Number(priceInp.value) * (Number(lossPercentInp.value) / 100)
+      ).toFixed(3) - Number(priceInp.value)
+    ).toFixed(1)})`;
   }
 });
