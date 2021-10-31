@@ -9,31 +9,69 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1>Percentage Calculator</h1>
-      <input
-        type="number"
-        id="priceInp"
-        placeholder="Enter the Price"
-        class="inputField"
-      />
-      <input
-        type="number"
-        id="tarPercentInp"
-        placeholder="Enter Target Percentage"
-        class="inputField"
-      />
-      <input
-        type="number"
-        id="lossPercentInp"
-        placeholder="Enter Risk Percentage"
-        class="inputField"
-      />
-      <button class="button">Calculate</button>
-      <div class="resultCont">
-        <h4>Target<span class="targetTxt resTxt"></span></h4>
-        <h4>StopLoss<span class="stopLossTxt resTxt"></span></h4>
+    <div class="containerWrapper">
+      <div class="container">
+        <div class="containerInnerPercent">
+          <h1>Percentage Calculator</h1>
+          <input
+            type="number"
+            id="priceInp"
+            placeholder="Enter the Price"
+            class="inputField"
+          />
+          <input
+            type="number"
+            id="tarPercentInp"
+            placeholder="Enter Target Percentage"
+            class="inputField"
+          />
+          <input
+            type="number"
+            id="lossPercentInp"
+            placeholder="Enter Risk Percentage"
+            class="inputField"
+          />
+          <button class="button" id="percentBtn">Calculate</button>
+          <div class="resultCont">
+            <h4>Target<span class="targetTxt resTxt"></span></h4>
+            <h4>StopLoss<span class="stopLossTxt resTxt"></span></h4>
+          </div>
+        </div>
+        <div class="containerInnerCount">
+          <h1>Quantity Calculator</h1>
+          <input
+            type="number"
+            id="entryPriceCount"
+            placeholder="Entery Price"
+            class="inputField"
+          />
+          <input
+            type="number"
+            id="stopLossPriceCount"
+            placeholder="Stop Loss"
+            class="inputField"
+          />
+          <input
+            type="number"
+            id="riskAmount"
+            placeholder="Risk Amount"
+            class="inputField"
+          />
+          <button class="button" id="StockCountBtn">Calculate</button>
+          <div class="resultCont">
+            <h4>Quantity<span class="QuantityRes resTxt"></span></h4>
+            <h4>2X Target<span class="countTarget resTxt"></span></h4>
+          </div>
+        </div>
+        <button class="toggleBtn"><i class="fas fa-angle-up"></i></button>
+        <!-- <div class="stockCountBanner"></div> -->
+        </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/42a0bc8d9f.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
